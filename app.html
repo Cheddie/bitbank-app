@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>BitBank – Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/tronweb@2.0.0/dist/TronWeb.min.js"></script>
+</head>
+<body style="margin:0;font-family:'Inter',sans-serif;background:#f5f8fc;color:#222">
+  <header style="background:#1e2235;color:#fff;padding:20px 20px;text-align:center">
+    <h1 style="font-size:2.5em;margin:0;">Welcome to BitBank Dashboard</h1>
+    <p style="font-size:1.2em;color:#ccc">Start growing your funds. Compound daily earnings at 1%.</p>
+  </header>
+
+  <section style="padding:40px 20px;background:#fff">
+    <div style="text-align:center;">
+      <h2>Your Investment</h2>
+      <p>Amount Invested: <span id="amountInvested">$0</span> USDT</p>
+      <p>Your Daily Earnings: <span id="dailyEarnings">$0</span> USDT</p>
+      <p>Time Remaining: <span id="timeLeft">0</span> days</p>
+      <button id="investButton" style="background:#00c9a7;color:#fff;padding:14px 24px;border:none;border-radius:8px;font-size:1.2em;cursor:pointer;margin-top:20px">Invest Now</button>
+    </div>
+  </section>
+
+  <section style="background:#fffaf0;padding:40px 20px;text-align:center">
+    <h2>Referral Bonus</h2>
+    <p>Refer friends to earn a 5% bonus on each investment!</p>
+    <p>Your Referral Code: <span id="refCode">ABCD1234</span></p>
+  </section>
+
+  <footer style="background:#1e2235;color:#bbb;padding:20px;font-size:0.9em;text-align:center">
+    Your USDT grows daily. Withdraw on maturity.
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
